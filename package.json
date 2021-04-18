@@ -2,14 +2,14 @@
   "name": "discord-player",
   "version": "4.0.0-dev",
   "description": "Complete framework to facilitate music commands using discord.js",
-  "main": "lib/src/index.js",
-  "types": "lib/src/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "yarn build && cd test && node index.js",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "postinstall": "npx tsc --build tsconfig.json"
+    "postinstall": "npm run build"
   },
   "funding": "https://github.com/Androz2091/discord-player?sponsor=1",
   "contributors": [
