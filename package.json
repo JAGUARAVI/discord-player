@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "yarn build && cd test && node index.js",
-    "build": "tsc",
+    "build": "tsc --build tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "postinstall": "npm run build"
